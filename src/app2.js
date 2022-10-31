@@ -19,6 +19,7 @@ const slug = urlParams.get('movie');
 const renderMovieApp2 = async ()=>{
     var html = '';
     var moviesList = await movieApp2();
+    console.log(moviesList);
     const pageData = moviesList.data.movies.filter(movie => movie.slug === slug);
     
    
